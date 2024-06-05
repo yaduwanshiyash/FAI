@@ -9,6 +9,19 @@ a{
 }
 
 
+.log{
+  position: absolute;
+  top: 5vh;
+  right: 3vw;
+
+}
+button{
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: rgb(90, 181, 216);
+  border: none;
+  color: #fff;
+}
 
 *{
   margin: 0;
