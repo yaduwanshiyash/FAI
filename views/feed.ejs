@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>FAI</title>
+    <style>
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <h1 class="uppercase text-center" style="padding-top: 2rem;">functional assessment interview
+            (fai)</h1>
+        <div class="form">
+            <form action="page1.html">
+                <div class="flex item-center justify-between gap-20">
+                    <div class="flex item-center gap-4 wd-full">
+                        <label for="firstperson" class="no-wrap">Person of concern</b></label>
+                        <input type="text" id="firstperson" name="firstperson" class="wd-full">
+                    </div>
+
+                    <div class="flex item-center gap-4">
+                        <label for="firstage" class="no-wrap"><b>Age</b></label>
+                        <input type="text" id="firstage" name="firstage">
+                    </div>
+                    <div class="flex item-center gap-4 no-wrap">
+                        <p>Sex</p>
+                        <div class="flex item-center gap-2 no-wrap">
+                            <label for="ffaimale"> Male</label>
+                            <input type="radio" id="ffaimale" name="ffaigender">
+                        </div>
+                        <div class="flex item-center gap-2 no-wrap">
+                            <label for="ffaifemale">Female</label>
+                            <input type="radio" id="ffaifemale" name="ffaigender">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="flex item-center gap-4">
+                    <label for="ffaiinterviewe" class="no-wrap"><b>Date of Interview:</b></label>
+                    <input type="date" id="ffaiinterviewe" name="ffaiinterviewe">
+                </div>
+
+                <br>
+
+                <div class="flex item-center gap-4">
+                    <label for="ffaiinterviewer" class="no-wrap"><b>Interviewer: </b></label>
+                    <input type="text" id="ffaiinterviewer" name="ffaiinterviewer">
+                </div>
+
+                <br>
+
+                <div class="flex item-center gap-4">
+                    <label for="ffairesponde" class="no-wrap"><b>Respondents:</b> </label>
+                    <input type="text" id="ffairesponde" name="ffairesponde">
+                </div>
+                <br>
+                <div>
+                    <p class="text-18 uppercase">A. describe the behaviors</p>
+                </div><br>
+                <div class="flex gp-1rem px-3 leading-1-5">
+                    <span>1)</span>
+                    <p"> For each of the behaviors of concern, define the topography (how it is performed), frequency
+                        (how often it occurs per day, week, or month), duration (how long it last when it occurs), and
+                        intensity (how damaging or destructive the behaviors are when they accur).</p>
+                </div>
+                <br>
+                <div class="flex justify-around pb-4">
+                    <span><i>Behavior</i></span>
+                    <span><i>Topography</i></span>
+                    <span><i>Frequency</i></span>
+                    <span><i>Duration</i></span>
+                    <span><i>Intensity</i></span>
+                </div>
+
+                <div>
+                    <ol type="1" class="mn-g flex column gp-1rem">
+                        <li><input type="text" id="ffduration1" name="ffduration1"></li>
+                        <li><input type="text" id="ffduration2" name="ffduration2"></li>
+                        <li><input type="text" id="ffduration3" name="ffduration3"></li>
+                        <li><input type="text" id="ffduration4" name="ffduration4"></li>
+                        <li><input type="text" id="ffduration5" name="ffduration5"></li>
+                        <li><input type="text" id="ffduration6" name="ffduration6"></li>
+                        <li><input type="text" id="ffduration7" name="ffduration7"></li>
+                    </ol>
+                </div>
+
+                <div class="flex gp-1rem py-3" style="line-height: 1.5; padding-bottom: 0;">
+                    <span>2)</span>
+                    <p>Which of the behaviors describe adove are likely to occur together in some way? That is, do they
+                        occur about the same time, or in some kind of predictable sequence or "chain", or in response to
+                        the same type of situation?</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour1" id="ffaibehaviour1"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+
+                <div class="pt-3">
+                    <p class="text-18">B. DEFINE ECOLOGICAL EVENTS (SETTING EVENTS)THAT PREDICT OR SETUP THE PROBLEM
+                        BEHAVIOR(S)</p>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <p>What medication is the person taking (if any), and how do you believe these may affect his/her
+                        behavior?</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour2" id="ffaibehaviour2"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>2)</span>
+                    <p>What medical or physical conditions (if any) does the person experience that may affect his/her
+                        behavior (e.g., asthma, allergies, rashes, sinus infections, seizures, problems releted to
+                        menstruation)?</p>
+                </div>
+                <div class="mn-g px-3  flex column gap-20">
+                    <textarea name="ffaibehaviour3" id="ffaibehaviour3"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>3)</span>
+                    <p>Describe the <i>sleep patterns</i> of the individual and the extent to which these patterns may
+                        affect his/her behavior.</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour4" id="ffaibehaviour4"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>4)</span>
+                    <p>Describe the <i>eating routines and diet of</i> the person, and the extent to which these may
+                        affect his/her behavior</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour5" id="ffaibehaviour5"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>5)</span>
+                    <p>Brietly list below the person's typical daily schedule of activities. (check the boxes by those
+                        activities the person enjoys and those activities most associated with problems)</p>
+                </div>
+                <div class="mn-g px-3 flex">
+                    <div class="flex-1">
+                        <p class="pt-1">Enjoys Problems</p>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems1" name="fproblems1">
+                                <input type="checkbox" id="fproblems2" name="fproblems2">
+                            </div>
+                            <div class="mn-g px-3 flex items-end flex-1 item-center gap-4">
+                                <label>6.00</label>
+                                <input type="text" id="fproblems3" name="fproblems3">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems4" name="fproblems4">
+                                <input type="checkbox" id="fproblems48" name="fproblems48">
+                            </div>
+                            <div class="mn-g px-3 flex items-center flex-1 gap-4">
+                                <label>7.00</label>
+                                <input type="text" id="fproblems5" name="fproblems5">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems6" name="fproblems6">
+                                <input type="checkbox" id="fproblems7" name="fproblems7">
+                            </div>
+                            <div class="mn-g px-3 flex items-center flex-1 gap-4">
+                                <label>8:00</label>
+                                <input type="text" id="fproblems8" name="fproblems8">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems9" name="fproblems9">
+                                <input type="checkbox" id="fproblems10" name="fproblems10">
+                            </div>
+                            <div class="mn-g px-3 flex items-center flex-1 gap-4">
+                                <label>9:00</label>
+                                <input type="text" id="fproblems11" name="fproblems11">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems12" name="fproblems12">
+                                <input type="checkbox" id="fproblems13" name="fproblems13">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>10:00</label>
+                                <input type="text" id="fproblems14" name="fproblems14">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems15" name="fproblems15">
+                                <input type="checkbox" id="fproblems16" name="fproblems16">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>11:00</label>
+                                <input type="text" id="fproblems17" name="fproblems17">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems18" name="fproblems18">
+                                <input type="checkbox" id="fproblems19" name="fproblems19">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>12:00</label>
+                                <input type="text" id="fproblems20" name="fproblems20">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-end justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems21" name="fproblems21">
+                                <input type="checkbox" id="fproblems22" name="fproblems22">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>1:00</label>
+                                <input type="text" id="fproblems23" name="fproblems23">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="pt-1">Enjoys Problems</p>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems24" name="fproblems24">
+                                <input type="checkbox" id="fproblems25" name="fproblems25">
+                            </div>
+                            <div class="mn-g px-3 flex items-end flex-1 item-center gap-4">
+                                <label>2:00</label>
+                                <input type="text" id="fproblems26" name="fproblems26">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems27" name="fproblems27">
+                                <input type="checkbox" id="fproblems28" name="fproblems28">
+                            </div>
+                            <div class="mn-g px-3 flex items-center flex-1 gap-4">
+                                <label>3:00</label>
+                                <input type="text" id="fproblems29" name="fproblems29">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems30" name="fproblems30">
+                                <input type="checkbox" id="fproblems31" name="fproblems31">
+                            </div>
+                            <div class="mn-g px-3 flex items-center flex-1 gap-4">
+                                <label>4:00</label>
+                                <input type="text" id="fproblems32" name="fproblems32">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems33" name="fproblems33">
+                                <input type="checkbox" id="fproblems34" name="fproblems34">
+                            </div>
+                            <div class="mn-g px-3 flex items-center flex-1 gap-4">
+                                <label>5:00</label>
+                                <input type="text" id="fproblems35" name="fproblems35">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems36" name="fproblems36">
+                                <input type="checkbox" id=37" name="fproblems37">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>6:00</label>
+                                <input type="text" id="fproblems38" name="fproblems38">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems39" name="fproblems29">
+                                <input type="checkbox" id="fproblems40" name="fproblems40">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>7:00</label>
+                                <input type="text" id="fproblems41" name="fproblems41">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems42" name="fproblems42">
+                                <input type="checkbox" id="fproblems43" name="fproblems43">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>8:00</label>
+                                <input type="text" id="fproblems44" name="fproblems44">
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-end justify-between pb-4">
+                            <div class="flex gap-20">
+                                <input type="checkbox" id="fproblems45" name="fproblems45">
+                                <input type="checkbox" id="fproblems46" name="fproblems46">
+                            </div>
+                            <div class="mn-g px-3 flex items-center gap-4 flex-1">
+                                <label>9:00</label>
+                                <input type="text" id="fproblems47" name="fproblems47">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gp-1rem p-2 px-2" style="line-height: 1.5;">
+                    <span>6)</span>
+                    <p>To what are the activities on the daily schedule <i>predictable</i> for the person, with regard
+                        to what's going to be happening, when it will occur, with whom, and for how log?</p>
+                </div>
+                <div class="mn-g px-3">
+                    <textarea name="ffaibehaviour6" id="ffaibehaviour6"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>7)</span>
+                    <p>To what extent does the person to have opportunity during their day to <i>make choices</i> about
+                        their activities and reinforcing events? (e.g, food, clothing, social companions, leisure
+                        activities, etc.?)</p>
+                </div>
+                <div class="mn-g px-3">
+                    <textarea name="ffaibehaviour7" id="ffaibehaviour7"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>8)</span>
+                    <p>How many other person are typically around the individual at home, school, or work (including
+                        staff, classmates and housemates, etc.)? Does the person typically seem bothered in situations
+                        that are more <i>crowded and noisy</i>?</p>
+                </div>
+                <div class="mn-g px-3">
+                    <textarea name="ffaibehaviour8" id="ffaibehaviour8"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>9)</span>
+                    <p>What is the pattern of <i>staffing support</i> that the person receives in home, school, work,
+                        and other settings (e.g, 1: 1, 2: 1, etc.)? Do you believe that the <i>number</i> of staff, the
+                        <i>training</i> of staff, or their <i>social interaction with the person</i> affect the problem
+                        behavior?
+                    </p>
+                </div>
+                <div class="mn-g px-3">
+                    <textarea name="ffaibehaviour9" id="ffaibehaviour9"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+
+                <div class="pt-3">
+                    <p class="text-18">C. DEFINE SPECIFIC IMMEDIATE ANTECEDENT EVENTS THAT PREDICT WHEN THE BEHAVIOR(S)
+                        ARE LIKELY AND NOT LIKELY TO OCCUR</p>
+                </div>
+                <br>
+                <div class="flex flex-1 gp-1rem p-2 px-2" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <div class="w-full">
+                        <p><b><i>Thoms of day: </i></b>Which of the behaviors most and least likely to happen?</p>
+                        <div class="flex items-start gap-4">
+                            <label>Most likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour10" id="ffaibehaviour10"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div><br>
+                        <div class="flex items-start gap-4">
+                            <label class="">Least likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour11" id="ffaibehaviour11"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="flex flex-1 gp-1rem px-2" style="line-height: 1.5;">
+                    <span>2)</span>
+                    <div class="w-full">
+                        <p><b><i>Settings: </i></b>Which of the behaviors most and least likely to happen?</p>
+                        <div class="flex items-start gap-4">
+                            <label>Most likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour12" id="ffaibehaviour12"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div><br>
+                        <div class="flex items-start gap-4">
+                            <label>Least likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour13" id="ffaibehaviour13"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="flex flex-1 gp-1rem px-2" style="line-height: 1.5;">
+                    <span>3)</span>
+                    <div class="w-full">
+                        <p><b><i>People: </i></b>Which of the behaviors most and least likely to happen?</p>
+                        <div class="flex items-start gap-4">
+                            <label>Most likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour14" id="ffaibehaviour14"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div><br>
+                        <div class="flex items-start gap-4">
+                            <label>Least likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour15" id="ffaibehaviour15"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="flex flex-1 gp-1rem px-2" style="line-height: 1.5;">
+                    <span>4)</span>
+                    <div class="w-full">
+                        <p><b><i>Activity: </i></b>Which of the behaviors most and least likely to happen?</p>
+                        <div class="flex items-start gap-4">
+                            <label>Most likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour16" id="ffaibehaviour16"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div><br>
+                        <div class="flex items-start gap-4">
+                            <label>Least likely</label>
+                            <div class="mn-g flex-1">
+                                <textarea name="ffaibehaviour17" id="ffaibehaviour17"
+                                    class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>5)</span>
+                    <p>Are there particular or idiosyncratic situations ior events that did not get listed above that
+                        sometimes seem to "set off" the behaviors, such as particular demands, noises, lights, clothing,
+                        etc.?</p>
+                </div>
+                <div class="mn-g px-3">
+                    <textarea name="ffaibehaviour18" id="ffaibehaviour18"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>6)</span>
+                    <p>What would be the <i>one thing </i> you could do that would be most likely to make the
+                        undesirable behaviors occur?</p>
+                </div>
+                <div class="mn-g px-3">
+                    <textarea name="ffaibehaviour19" id="ffaibehaviour19"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>7)</span>
+                    <p>Briefly describe how it would affect the persons behavior if.</p>
+                </div>
+                <div class="flex items-start pl-4">
+                    <span>a)</span>
+                    <div class="mn-g px-3 flex-1">
+                        <label>You asked him/her to perform a dificult task.</label>
+                        <textarea name="ffaibehaviour20" id="ffaibehaviour20"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <div class="flex items-start pl-4 p-2">
+                    <span>b)</span>
+                    <div class="mn-g px-3 flex-1">
+                        <label>You interrupted a desired Activity, such as eating ice cream or watching TV...</label>
+                        <textarea name="ffaibehaviour21" id="ffaibehaviour21"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <div class="flex items-start pl-4 p-2">
+                    <span>c)</span>
+                    <div class="mn-g px-3 flex-1">
+                        <label>You unexpectedly changed his/her typical routine or schedule of activities...</label>
+                        <textarea name="ffaibehaviour22" id="ffaibehaviour22"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <div class="flex items-start pl-4 p-2">
+                    <span>d)</span>
+                    <div class="mn-g px-3 flex-1">
+                        <label>There was something she/he wanted but wasn't able to get (e.g, a food item up on a
+                            shelf)...</label>
+                        <textarea name="ffaibehaviour23" id="ffaibehaviour23"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <div class="flex items-start pl-4 p-2">
+                    <span>e)</span>
+                    <div class="mn-g px-3 flex-1">
+                        <label>You didn't pay attention to him/her or left he/him alone for awhile (e.g, 15
+                            minutes)...</label>
+                        <textarea name="ffaibehaviour24" id="ffaibehaviour24"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <p class="text-18">D. IDENTIFY THE CONSEQUENCES OR OUTCOMES OF THE PROBLEM BEHAVIOR(S) THAT MAY BE
+                        MAINTAINING THEM (i.e, what functions do they server for the person in particular situations)
+                    </p>
+                </div><br>
+                <div class="flex gp-1rem px-3" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <p">Think of each of the behaviors listed in Section A, and try to identify the <i>specific</i>
+                        consequences or outcomes that the person gets when the behaviors occur in different situations?
+                        </p>
+                </div>
+                <br>
+                <div class="flex justify-around pb-4">
+                    <span><i>Behavior</i></span>
+                    <span class="flex column">
+                        <i>Particular</i>
+                        <i>Situation(s)</i>
+                    </span>
+                    <span class="flex column">
+                        <i>What exactly does</i>
+                        <i>he i she get?</i>
+                    </span>
+                    <span class="flex column">
+                        <i>What exactly</i>
+                        <i>does he i she avoid</i>
+                    </span>
+                </div>
+
+                <div>
+                    <ol type="1" class="mn-g flex column gp-1rem">
+                        <li><input type="text" id="ffduration8" name="ffduration8"></li>
+                        <li><input type="text" id="ffduration9" name="ffduration9"></li>
+                        <li><input type="text" id="ffduration10" name="ffduration10"></li>
+                        <li><input type="text" id="ffduration11" name="ffduration11"></li>
+                        <li><input type="text" id="ffduration12" name="ffduration12"></li>
+                        <li><input type="text" id="ffduration13" name="ffduration13"></li>
+                        <li><input type="text" id="ffduration14" name="ffduration14"></li>
+                        <li><input type="text" id="ffduration15" name="ffduration15"></li>
+                        <li><input type="text" id="ffduration16" name="ffduration16"></li>
+                        <li><input type="text" id="ffduration17" name="ffduration17"></li>
+                    </ol>
+                </div>
+
+                <div class="pt-2">
+                    <p class="text-18">E. CONSIDER THE OVERALL <i>EFFICIENCY OF</i> THE PROBLEM BEHAVIOR(S). EFFICIENCY
+                        IS THE COMBINED RESULT OF (A) HOW MUCH <i>PHYSICAL EFFORT</i> IS REQUIRED, (B) <i>HOW OFTEN</i>
+                        THE BEHAVIOR IS PERFORMED BEFORE IT IS REWARDED AND (C) <i>HOW LONG THE</i> THE PERSON MUST WAIT
+                        TO GET THE REWARD.</p>
+                </div>
+                <!-- ye baki hai -->
+                <!-- ye baki hai -->
+                <br>
+                <div class="pt-2">
+                    <p class="text-18">F. <i>WHAT FUNCTIONAL ALTERNATIVE</i> BEHAVIORS DOES THE PERSON ALREADY KNOW HOW
+                        TO DO</p>
+                </div>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <p>What socially appropriate behaviors or skills can the person already perform that may be ways of
+                        getting the same outcomes or reinforcers as the problem behaviors?</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour25" id="ffaibehaviour25"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <p class="text-18">G. WHAT ARE THE PRIMARY WAYS THAT THE PERSON COMMUNICATES WITH OTHER PEOPLE?</p>
+                </div>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <p>What are the general expressive communication board/books, electronic devices, etc. How
+                        consistently are the strategies used?</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour26" id="ffaibehaviour26"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <!-- ye baki hai -->
+                <!-- 2 -->
+                <!-- ye baki hai -->
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>3)</span>
+                    <p>With regard to the person's receptive communication, or ability to understand other person ...
+                    </p>
+                </div><br>
+                <div class="flex gp-1rem px-2 pl-16" style="line-height: 1.5;">
+                    <span>a)</span>
+                    <div>
+                        <p>Does the person follow spoken requests or instruction? If so approximately how many? (List if
+                            only a few).</p>
+                        <textarea name="ffaibehaviour27" id="ffaibehaviour27"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2 pl-16" style="line-height: 1.5;">
+                    <span>b)</span>
+                    <div>
+                        <p>Does the person respond to signed or gestural requests or instruction? If so, approximately
+                            how many? (List if only a few).</p>
+                        <textarea name="ffaibehaviour28" id="ffaibehaviour28"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2 pl-16" style="line-height: 1.5;">
+                    <span>c)</span>
+                    <div>
+                        <p>Is the person able to imitate if you provide physical models for various tasks or activities?
+                            (List if only a few).</p>
+                        <textarea name="ffaibehaviour29" id="ffaibehaviour29"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2 pl-16" style="line-height: 1.5;">
+                    <span>b)</span>
+                    <div>
+                        <p>How does the person typically indicate <i>yes or no</i> when asked if she/he wants something,
+                            wants to go somewhere, etc.?</p>
+                        <textarea name="ffaibehaviour30" id="ffaibehaviour30"
+                            class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="pt-2">
+                    <p class="text-18">H. WHAT ARE THINGS YOU <i>SHOULD DO</i> AND THINGS YOU <i>SHOULD AVOID IN WORKING
+                            WITH AND SUPPORTING THIS PERSON?</i></p>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <p>What things can you do to improve the likelihood that a teaching session or other activity will
+                        go well with this person?</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour31" id="ffaibehaviour31"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>2)</span>
+                    <p>What things should you avoid that might interfere with or disrupt a teaching session or activity
+                        with this person?</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour32" id="ffaibehaviour32"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="pt-2">
+                    <p class="text-18">I. WHAT ARE THINGS THAT THE PERSON LIKES, AND ARE REINFORCING FOR HIM/HER?</p>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>1)</span>
+                    <p>Food items:</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour33" id="ffaibehaviour33"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>2)</span>
+                    <p>Toys & objects:</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour34" id="ffaibehaviour34"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>3)</span>
+                    <p>Activities at home:</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour35" id="ffaibehaviour35"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>4)</span>
+                    <p>Activities/outings in the community:</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour36" id="ffaibehaviour36"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+                <div class="flex gp-1rem px-2" style="line-height: 1.5;">
+                    <span>5)</span>
+                    <p>Other:</p>
+                </div>
+                <div class="mn-g px-3 flex column gap-20">
+                    <textarea name="ffaibehaviour37" id="ffaibehaviour37"
+                        class="h-28 border-r-none w-full p-2 resize-none border-2"></textarea>
+                </div>
+                <br>
+
+                <div class="pt-2">
+                    <p class="text-18">J. WHAT DO YOU KNOW ABOUT THE HISTORY OF THE UNDESIRABLE BEHAVIORS, THE PROGRAMS
+                        THAT HAVE BEEN ATTEMPTED TO DESCREASE OR ELIMINATE THEM, AND THE EFFECTS OF THOSE PROGRAMS?</p>
+                </div>
+                <br>
+
+                <div class="flex justify-around pb-4">
+                    <span><i>Behavior</i></span>
+                    <span class="flex column">
+                        <i>How long has this</i>
+                        <i>been a problem?</i>
+                    </span>
+                    <span class="flex column">
+                        <i>Programs</i>
+                    </span>
+                    <span class="flex column">
+                        <i>Effects</i>
+                    </span>
+                </div>
+
+                <div>
+                    <ol type="1" class="mn-g flex column gp-1rem">
+                        <li><input type="text" id="ffduration18" name="ffduration18"></li>
+                        <li><input type="text" id="ffduration19" name="ffduration19"></li>
+                        <li><input type="text" id="ffduration20" name="ffduration20"></li>
+                        <li><input type="text" id="ffduration21" name="ffduration21"></li>
+                        <li><input type="text" id="ffduration22" name="ffduration22"></li>
+                        <li><input type="text" id="ffduration23" name="ffduration23"></li>
+                        <li><input type="text" id="ffduration24" name="ffduration24"></li>
+                        <li><input type="text" id="ffduration25" name="ffduration25"></li>
+                        <li><input type="text" id="ffduration26" name="ffduration26"></li>
+                        <li><input type="text" id="ffduration27" name="ffduration27"></li>
+                    </ol>
+                </div>
+
+            </form>
+</body>
+
+</html>

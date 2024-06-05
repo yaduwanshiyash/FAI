@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #ffff;
+}
+.pic img{
+    border-radius: 10px;
+}
+
+.main{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.three{
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.p-post{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin: 5vw 8vw;
+    justify-content: center;
+}
+
+#pencil{
+    background-color: #dadada;
+    height: 2vw;
+    border-radius: 50%;
+    width: 2vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 25%;
+    right: 0%;
+}
+
+#profileimage{
+    height: 20vw;
+    width: 100%;
+}
+#profileimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

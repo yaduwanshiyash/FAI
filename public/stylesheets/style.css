@@ -1,0 +1,304 @@
+.farm{
+  display: none;
+}
+
+
+a{
+  text-decoration: none;
+  display: block;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html , body{
+  height: 100%;
+  width: 100%;
+  /* font-family: sans-serif; */
+}
+
+#main {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5rem;
+  /* background-color: red; */
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* .mn-g {
+  gap: 1rem;
+} */
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.wd-full {
+  /* background-color: bisque; */
+  width: 100%;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.wd-smoll {
+  flex: .2;
+  min-width: 4rem;
+  white-space: nowrap;
+}
+
+.mg-l {
+  margin-left: 2rem;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.gp-1rem {
+  gap: 1rem;
+}
+
+textarea {
+  border: 2px solid #202020;
+}
+
+.mn-g input[type=text] {
+  outline: none;
+  border: none;
+  border: 2px solid #202020;
+  width: 100%;
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.wd-full input[type=text] {
+  width: 100%;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.px-3 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.p-2 {
+  padding: .5rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.leading-2-5 {
+  line-height: 2.5;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl-4 {
+  padding-left: 4rem;
+}
+
+
+.form button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(22, 107, 218);
+  outline: none;
+  border-radius: 3px;
+  color: #ffff;
+  float: right;
+  clear: both;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main form input[type="text"] {
+  border-radius: 100vh;
+  border: 2px solid #000;
+  padding: 6px 10px;
+  width: 100%;
+  display: inline;
+}
+
+#main .pl-16 {
+  padding-left: 4rem;
+}
+
+#main form .flex {
+  display: flex;
+}
+
+#main form .item-center {
+  align-items: center;
+}
+
+#main form .gap-4 {
+  gap: .5rem;
+}
+
+#main form .no-wrap {
+  white-space: nowrap;
+}
+
+#main form .flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+#main form .apprence-none {
+  appearance: none;
+}
+
+#main form .check-lable {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 800;
+}
+
+#main form input[name="testchecks"]:checked~.check-lable {
+  background: #b62020;
+  color: #fff;
+}
+
+#main form .border-b-1 {
+  border-bottom: 1px solid #212121;
+}
+
+#main form .pb-4 {
+  padding-bottom: 16px;
+}
+
+#main .text-center {
+  text-align: center;
+}
+
+#main .w-full {
+  width: 100%;
+}
+
+#main .gap-16 {
+  gap: 2rem;
+}
+
+#main .text-18 {
+  font-size: 18px;
+}
+
+#main .leading-1-5 {
+  line-height: 1.5;
+}
+
+#main .h-28 {
+  height: 7rem;
+}
+
+#main .resize-none {
+  resize: none;
+}
+
+#main .uppercase {
+  text-transform: uppercase;
+}
