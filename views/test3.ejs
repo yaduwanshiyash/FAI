@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAI</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #main form input[type="text"] {
+            border-radius: 100vh;
+            border: 2px solid #000;
+            padding: 6px 10px;
+            width: 100%;
+            display: inline;
+        }
+
+        #main form .flex {
+            display: flex;
+        }
+
+        #main form .item-center {
+            align-items: center;
+        }
+
+        #main form .gap-4 {
+            gap: .5rem;
+        }
+
+        #main form .no-wrap {
+            white-space: nowrap;
+        }
+
+        #main form .flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        #main form .apprence-none {
+            appearance: none;
+        }
+
+        #main .text-center {
+            text-align: center;
+        }
+
+        #main .pt-2 {
+            padding-top: .5rem;
+        }
+
+        #main .mr-4 {
+            margin-right: 1rem;
+        }
+
+        #main .flex-1 {
+            flex: 1;
+        }
+
+        #main form .scrcheck-lable {
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 800;
+            padding: 5px;
+        }
+
+        #main form input[name="scrinract"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior1"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior2"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior3"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior4"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior5"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior6"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior7"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior8"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior9"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior10"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior11"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior12"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior13"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior14"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior15"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior16"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior17"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior18"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior19"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior20"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior21"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior22"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior23"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior24"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior25"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior26"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="behavior27"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main .justify-between {
+            justify-content: space-between;
+        }
+
+        #main .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        #main .gap-2 {
+            gap: .5rem;
+        }
+
+        #main #cpmments-notes {
+            width: 100%;
+            height: 10rem;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h3 class="text-center">FUNCTIONAL ASSESSMENT SCREENING TOOL (FAST)</h3>
+
+        <form action="" method="post">
+            <div class="flex item-center gap-4">
+                <label for="testname" class="no-wrap"><b>Name:</b></label>
+                <input type="text" id="scrname" name="scrname">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testage" class="no-wrap"><b>Age:</b></label>
+                <input type="text" id="scrage" name="scrage">
+            </div>
+
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testtdate" class="no-wrap">Date:</b></label>
+                <input type="date" id="scrtdate" name="scrtdate">
+            </div>
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testrater" class="no-wrap"><b>Behavior Problem:</b></label>
+                <input type="text" id="scrbproblem" name="scrbproblem">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testdisc" class="no-wrap"><b>Informant:</b> </label>
+                <input type="text" id="scrinform" name="scrinform">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testsdisc" class="no-wrap"><b>Interviewer:</b></label>
+                <input type="text" id="scrinterviewer" name="scrinterviewer">
+            </div>
+            <br>
+            <p><b><i>To the Interviewer.</i></b> The Functional Analysis Screening Tool (FAST) is designed to identify a
+                number of factors that may
+                influence the occurrence of problem behaviors. It should be used only as an initial screening toll and
+                as part of a
+                comprehensive functional assessment or analysis of problem behavior. The FAST should be administered to
+                several
+                individuals who interact with the person frequently. Results should then be used as the basis for
+                conducting direct
+                observations in several different contexts to verify likely behavioral functions, clarify ambiguous
+                functions, and identify other
+                relevant factors that may not have been included in this instrument. </p>
+            <br>
+            <p><b><i>To the Informant:</i></b> After completing the section on "Informant-Person Relationship," read
+                each of the numbered items
+                carefully. If a statement accurately describes the person's behavior problem, circle "Yes." If not,
+                circle "No." If the behavior
+                problem consists of either self-injurious behavior or "repetitive stereotyped behaviors," begin with
+                Part I. However, if the
+                problem consists of aggression or some other form of socially disruptive behavior, such as property
+                destruction or tantrums,
+                complete only Part II. </p>
+
+            <br>
+            <h4><i>Informant-Person Relationship</i></h4><br>
+            <p>Indicate your relationship to the person:</p>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrparent" class="no-wrap">Parent</label>
+                <input type="text" name="scrparent" id="scrparent">
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrteacher" class="no-wrap">Teacher/lnstructor</label>
+                <input type="text" name="scrteacher" id="scrteacher">
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrstaf" class="no-wrap"> Residential Staf</label>
+                <input type="text" name="scrstaf" id="scrstaf">
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrpother" class="no-wrap">Other</label>
+                <input type="text" name="scrpother" id="scrpother">
+            </div><br>
+            <p>Indicate your relationship to the person:</p>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scryears" class="no-wrap">Years</label>
+                <input type="text" name="scryears" id="scryears">
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrmonths" class="no-wrap"> Months</label>
+                <input type="text" name="scrmonths" id="scrmonths">
+            </div>
+            <br>
+            <p>Do you interact with the person on a daily basis?</p>
+            <div class="flex gap-4">
+                <div>
+                    <input type="radio" name="scrinract" id="scrintract-yes" class="apprence-none">
+                    <label for="scrintract-yes" class="scrcheck-lable">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="scrinract" id="scrintract-no" class="apprence-none">
+                    <label for="scrintract-no" class="scrcheck-lable">No</label>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrhours-day" class="no-wrap">If "Yes," how many hours per day?</label>
+                <input type="text" name="scrhours-day" id="scrhours-day">
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <label for="scrhours-week" class="no-wrap">If "No," how many hours per week?</label>
+                <input type="text" name="scrhours-week" id="scrhours-week">
+            </div>
+            <br>
+            <p>In what situations do you typically observe the person? (Mark all that apply)</p>
+            <div class="flex item-center gap-4 pt-2">
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="scrroutines" class="no-wrap">Self-care routines</label>
+                    <input type="text" name="scrroutines" id="scrroutines">
+                </div>
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="scrroutines" class="no-wrap">Self-care routines</label>
+                    <input type="text" name="scrroutines" id="scrroutines">
+                </div>
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <div class="flex gap-4 item-center">
+                    <label for="scrmeals" class="no-wrap">Meals</label>
+                    <input type="text" name="scrmeals" id="scrmeals">
+                </div>
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="scrnothing" class="no-wrap">When (s)he has nothing to do</label>
+                    <input type="text" name="scrnothing" id="scrnothing">
+                </div>
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="scractivities" class="no-wrap">Leisure activities</label>
+                    <input type="text" name="scractivities" id="scractivities">
+                </div>
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="scrtraning" class="no-wrap">Work/vocational training</label>
+                    <input type="text" name="scrtraning" id="scrtraning">
+                </div>
+            </div>
+            <div class="flex item-center gap-4 pt-2">
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="screvining" class="no-wrap">Evenings</label>
+                    <input type="text" name="screvining" id="screvining">
+                </div>
+                <div class="flex gap-4 item-center flex-1">
+                    <label for="scrtother" class="no-wrap">Other:</label>
+                    <input type="text" name="scrtother" id="scrtother">
+                </div>
+            </div><br><br>
+            <h4>Part I. Social Influences on Behavior </h4><br>
+            <div class="flex item-center justify-between">
+                <p>1. The behavior usually occurs in your presence or in the presence of others</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck1" name="behavior1" class="apprence-none">
+                        <label for="behcheck1" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck2" name="behavior1" class="apprence-none">
+                        <label for="behcheck2" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>2. The behavior usually occurs soon after you or others interact with him/her in some way, such as
+                    delivering
+                    an instruction or reprimand, walking away from (ignoring) the him/her, taking away a "preferred"
+                    item,
+                    requiring him/her to change activities, talking to someone else in his/her presence, etc</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck3" name="behavior2" class="apprence-none">
+                        <label for="behcheck3" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck4" name="behavior2" class="apprence-none">
+                        <label for="behcheck4" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>3. The behavior often is accompanied by other "emotional" responses, such as yelling or crying</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck5" name="behavior3" class="apprence-none">
+                        <label for="behcheck5" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck6" name="behavior3" class="apprence-none">
+                        <label for="behcheck6" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <p><i>Complete Part/l if you answered "Yes" to item 1, 2, or 3. Skip Part/l if you answered "No" to all
+                    three items in Part I</i></p><br><br>
+            <h4>Part I. Social Influences on Behavior </h4>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>4. The behavior often occurs when he/she has not received much attention </p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck7" name="behavior4" class="apprence-none">
+                        <label for="behcheck7" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck8" name="behavior4" class="apprence-none">
+                        <label for="behcheck8" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>5. When the behavior occurs, you or others usually respond by interacting with the him/her in some way (e.g., 
+                    comforting statements, verbal correction or reprimand, response blocking, redirection) </p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck9" name="behavior5" class="apprence-none">
+                        <label for="behcheck9" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck10" name="behavior5" class="apprence-none">
+                        <label for="behcheck10" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>6. (S)he often engages in other annoying behaviors that produce attention</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck11" name="behavior6" class="apprence-none">
+                        <label for="behcheck11" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck12" name="behavior6" class="apprence-none">
+                        <label for="behcheck12" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>7. (S)he frequently approaches you or others and/or initiates social interaction</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck13" name="behavior7" class="apprence-none">
+                        <label for="behcheck13" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck14" name="behavior7" class="apprence-none">
+                        <label for="behcheck14" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between">
+                <p>8. The behavior rarely occurs when you give him/her lots of attention</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck15" name="behavior8" class="apprence-none">
+                        <label for="behcheck15" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck16" name="behavior8" class="apprence-none">
+                        <label for="behcheck16" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                <div>
+                    <p>9. The behavior often occurs when you take a particular item away from him/her or when you terminate a 
+                        preferred leisure activity (If "Yes," identify: )</p>
+                        <input type="text" id="scractivitis1" name="scractivitis1">
+                </div>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck17" name="behavior9" class="apprence-none">
+                        <label for="behcheck17" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck18" name="behavior9" class="apprence-none">
+                        <label for="behcheck18" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                <div>
+                    <p>10. The behavior often occurs when you inform the person that (s)he cannot have a certain item or cannot 
+                        engage in a particular activity. (If "Yes," identify: ) </p>
+                        <input type="text" id="scractivitis1" name="scractivitis1">
+                </div>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck19" name="behavior10" class="apprence-none">
+                        <label for="behcheck19" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck20" name="behavior10" class="apprence-none">
+                        <label for="behcheck20" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                <div>
+                    <p>11. When the behavior occurs, you often respond by giving him/her a specific item, such as a favorite toy, 
+                        food, or some other item. (If "Yes," identify: )</p>
+                        <input type="text" id="scractivitis1" name="scractivitis1">
+                </div>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck21" name="behavior11" class="apprence-none">
+                        <label for="behcheck21" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck22" name="behavior11" class="apprence-none">
+                        <label for="behcheck22" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>12. (S)he often engages in other annoying behaviors that produce access to preferred items or activities. </p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck23" name="behavior12" class="apprence-none">
+                        <label for="behcheck23" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck24" name="behavior12" class="apprence-none">
+                        <label for="behcheck24" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                   <div>
+                    <p>The behavior rarely occurs during training activities or when you place other types of demands on him/her.(If "Yes," identify the activities:)</p>
+                    <div class="flex item-center gap-4 justify-between flex-wrap">
+                        <div class="flex item-center gap-2">
+                            <label for="scractivitis2" class="no-wrap">self-care</label>
+                            <input type="text" id="scractivitis2" name="scractivitis2">
+                        </div>
+                        <div class="flex item-center gap-2">
+                            <label for="scractivitis3">academic</label>
+                            <input type="text" id="scractivitis3" name="scractivitis3">
+                        </div>
+                        <div class="flex item-center gap-2">
+                            <label for="scractivitis4">work</label>
+                            <input type="text" id="scractivitis4" name="scractivitis4">
+                        </div>
+                        <div class="flex item-center gap-2">
+                            <label for="scractivitis5">other</label>
+                            <input type="text" id="scractivitis5" name="scractivitis5">
+                        </div>
+                    </div>
+                   </div>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck25" name="behavior13" class="apprence-none">
+                        <label for="behcheck25" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck26" name="behavior13" class="apprence-none">
+                        <label for="behcheck26" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>14. The pehavior often occurs during training activities of when asked to complete tasks.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck27" name="behavior14" class="apprence-none">
+                        <label for="behcheck27" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck28" name="behavior14" class="apprence-none">
+                        <label for="behcheck28" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>15. (S}he often is noncompliant during training activities or when asked to complete tasks.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck29" name="behavior15" class="apprence-none">
+                        <label for="behcheck29" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck30" name="behavior15" class="apprence-none">
+                        <label for="behcheck30" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>16. The behavior often occurs when the immediate environment is very noisy or crowed.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck31" name="behavior16" class="apprence-none">
+                        <label for="behcheck31" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck32" name="behavior16" class="apprence-none">
+                        <label for="behcheck32" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>17. When the behavior occurs, you often respond by giving him/her brief "break from an ongoing task. </p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck33" name="behavior17" class="apprence-none">
+                        <label for="behcheck33" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck34" name="behavior17" class="apprence-none">
+                        <label for="behcheck34" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>18. The. behavior rarely occurs when you place few demands on him/her or when you leave him/her alone.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck35" name="behavior18" class="apprence-none">
+                        <label for="behcheck35" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck36" name="behavior18" class="apprence-none">
+                        <label for="behcheck36" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div><br><br>
+            <h4><i>Part III. Nonsocial (Automatic)Reinforcement </i></h4>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>19. The behavior occurs frequently when (s}he is alone or unoccupied</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck37" name="behavior19" class="apprence-none">
+                        <label for="behcheck37" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck38" name="behavior19" class="apprence-none">
+                        <label for="behcheck38" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>20. The behavior occurs at relatively high rates regardless of what is going on in his/her immediate 
+                        surrounding environment</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck39" name="behavior20" class="apprence-none">
+                        <label for="behcheck39" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck40" name="behavior20" class="apprence-none">
+                        <label for="behcheck40" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>21.. (S}he seems to have few known reinforcers or rarely engages in appropriate object manipulation or "play' 
+                        behavior.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck41" name="behavior21" class="apprence-none">
+                        <label for="behcheck41" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck42" name="behavior21" class="apprence-none">
+                        <label for="behcheck42" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>22. (S}he is generally unresponsive to social stimulation.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck43" name="behavior22" class="apprence-none">
+                        <label for="behcheck43" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck44" name="behavior22" class="apprence-none">
+                        <label for="behcheck44" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>23. (S }he often engages in repetitive, stereotyped behaviors such as body rocking, hand or finger waving, 
+                        object twirling, mouthing, etc.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck45" name="behavior23" class="apprence-none">
+                        <label for="behcheck45" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck46" name="behavior23" class="apprence-none">
+                        <label for="behcheck46" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>24. When (s}he engages in the behavior, you and others usually respond by doing nothing (Le., you never or 
+                        rarely attend to the behavior.)</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck47" name="behavior24" class="apprence-none">
+                        <label for="behcheck47" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck48" name="behavior24" class="apprence-none">
+                        <label for="behcheck48" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>25. The behavior seems to occur in cycles. During a "high" cycle, the behavior occurs frequently and is 
+                        extremely diffieult to interrupt. During a ~'Iowl cycle the behavior rarely occurs. </p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck49" name="behavior25" class="apprence-none">
+                        <label for="behcheck49" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck50" name="behavior25" class="apprence-none">
+                        <label for="behcheck50" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>26. The behavior seems to occur more often when the person is ill.</p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck51" name="behavior26" class="apprence-none">
+                        <label for="behcheck51" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck52" name="behavior26" class="apprence-none">
+                        <label for="behcheck52" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4">
+                    <p>27. (S}hehas a history of recurrent illness (e.g., ear or sinus infections, allergies, dermatitis). </p>
+                <div class="flex gap-4 item-center">
+                    <div>
+                        <input type="radio" id="behcheck53" name="behavior27" class="apprence-none">
+                        <label for="behcheck53" class="scrcheck-lable">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behcheck54" name="behavior27" class="apprence-none">
+                        <label for="behcheck54" class="scrcheck-lable">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="flex gap-2">
+                <label for="cpmments-notes" class="no-wrap">Comments/Notes:</label>
+                <textarea name="comments" id="cpmments-notes"></textarea>
+            </div>
+
+        </form>
+    </div>
+
+    <div class=" flex items-center justify-center gap-5">
+        <a href="/Quation" class=" "><button>page 1</button></a>
+        <a href="/Quation-2" class=" "><button>page 2</button></a>
+        <a href="/Quation-4" class=" "><button>page 4</button></a>
+        <a href="/Quation-5" class=" "><button>page 5</button></a>
+    </div>
+</body>
+
+</html>

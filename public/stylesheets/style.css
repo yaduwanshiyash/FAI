@@ -16,11 +16,17 @@ a{
 
 }
 button{
-  padding: 10px 15px;
-  border-radius: 50px;
-  background-color: rgb(90, 181, 216);
+  width: fit-content;
+  padding: 10px 20px;
   border: none;
-  color: #fff;
+  background: rgb(22, 107, 218);
+  outline: none;
+  border-radius: 3px;
+  color: #ffff;
+  float: right;
+  clear: both;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 *{
@@ -35,7 +41,7 @@ html , body{
 }
 
 #main {
-  max-width: 800px;
+  max-width: 900px;
   width: 90%;
   margin: auto;
   padding-bottom: 5rem;

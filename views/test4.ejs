@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAI</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #main form input[type="text"] {
+            border-radius: 100vh;
+            border: 2px solid #000;
+            padding: 6px 10px;
+            width: 100%;
+            display: inline;
+        }
+
+        #main form .flex {
+            display: flex;
+        }
+
+        #main form .item-center {
+            align-items: center;
+        }
+
+        #main form .gap-4 {
+            gap: .5rem;
+        }
+
+        #main form .no-wrap {
+            white-space: nowrap;
+        }
+
+        #main form .flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        #main form .apprence-none {
+            appearance: none;
+        }
+
+        #main .text-center {
+            text-align: center;
+        }
+
+        #main .pt-2 {
+            padding-top: .5rem;
+        }
+
+        #main .mr-4 {
+            margin-right: 1rem;
+        }
+
+        #main .flex-1 {
+            flex: 1;
+        }
+
+        #main .justify-between {
+            justify-content: space-between;
+        }
+
+        #main .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        #main form .scrcheck-lable {
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 800;
+            padding: 5px;
+        }
+
+        #main form input[name="scrinract"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main .border-b-1 {
+            border-bottom: 1px solid #212121;
+        }
+
+        #main .pb-2 {
+            padding-bottom: .5rem;
+        }
+
+        #main .gap-2 {
+            gap: .5rem;
+        }
+
+        #main .gap-4 {
+            gap: 1rem;
+        }
+
+        #main .h-28 {
+            height: 7rem;
+        }
+
+        #main .border-r-none {
+            border-radius: inherit !important;
+        }
+
+        #main .w-100 {
+            width: 100%;
+        }
+
+        #main .p-2 {
+            padding: .5rem;
+        }
+
+        #main .resize-none {
+            resize: none;
+        }
+
+        #main .border-2 {
+            border: 2px solid #212121 !important;
+        }
+
+        #main .cursor-pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="border-b-1 pb-2">
+            <h2 class="text-center">Open-Ended Functional Assessment Interview
+            </h2>
+            <h3 class="text-center">Developed by Gregory P. Hanley, Ph.D., BCBA-D (Developed August, 2002; Revised:
+                August, 2009)</h3>
+        </div>
+        <br>
+        <form action="" method="post">
+            <div class="flex item-center gap-4">
+                <label for="endtdate" class="no-wrap">Date of Interview:</b></label>
+                <input type="date" id="endtdate" name="endtdate">
+            </div>
+            <br>
+            <div class="flex item-center gap-4">
+                <label for="endclient" class="no-wrap"><b>Child/Client:</b></label>
+                <input type="text" id="endclient" name="endclient">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="endinterviewe" class="no-wrap"><b>Interviewer:</b></label>
+                <input type="text" id="endinterviewe" name="endinterviewe">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="endresponde" class="no-wrap"><b>Respondent: </b></label>
+                <input type="text" id="endresponde" name="endresponde">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="endresponde-chield" class="no-wrap"><b>Respondent’s relation to child/client:</b> </label>
+                <input type="text" id="endresponde-chield" name="endresponde-chield">
+            </div>
+
+            <br>
+            <h3>RELEVANT BACKGROUND INFORMATION</h3>
+            <br>
+            <div class="flex item-center gap-4">
+                <div class="flex item-center gap-2 no-wrap">
+                    <p>1. His/her date of birth:</p>
+                    <input type="text" id="endbirth" name="endbirth">
+                </div>
+                <div class="flex item-center gap-2 no-wrap">
+                    <p>Age:</p>
+                    <input type="text" id="endage" name="endage">
+                </div>
+                <div class="flex item-center gap-2 no-wrap">
+                    <p>yrs</p>
+                    <input type="text" id="endbirth" name="endbirth">
+                    <p>mo</p>
+                </div>
+                <div class="flex item-center gap-4 no-wrap">
+                    <div class="flex item-center gap-2 no-wrap">
+                        <p>Check one:</p>
+                        <label for="endmale"> Male</label>
+                        <input type="radio" id="endmale" name="endgender">
+                    </div>
+                    <div class="flex item-center gap-2 no-wrap">
+                        <label for="endfemale">Female</label>
+                        <input type="radio" id="endfemale" name="endgender">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">2. Describe his/her language abilities:</p>
+                <textarea id="enddiscribe1" name="enddiscribe1"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">3. Describe his/her play skills and preferred toys or leisure activities:</p>
+                <textarea id="enddiscribe2" name="enddiscribe2"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">4. What else does he/she prefer?</p>
+                <textarea id="enddiscribe3" name="enddiscribe3"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <h3>QUESTIONS TO INFORM THE DESIGN OF A FUNCTIONAL ANALYSIS</h3>
+            <br>
+            <p><i>To develop objective definitions of observable problem behaviors:</i></p>
+            <div>
+                <p class="pb-2">5. What are the problem behaviors? What do they look like?</p>
+                <textarea id="enddiscribe4" name="enddiscribe4"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <p><i>To determine which problem behavior(s) will be targeted in the functional analysis: </i></p>
+            <div>
+                <p class="pb-2">6. What is the single-most concerning problem behavior? </p>
+                <textarea id="enddiscribe5" name="enddiscribe5"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">7. What are the top 3 most concerning problem behaviors? Are there other behaviors of
+                    concern?</p>
+                <textarea id="enddiscribe6" name="enddiscribe6"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <p><i>To determine the precautions required when conducting the functional analysis:
+                </i></p>
+            <div>
+                <p class="pb-2">8. Describe the range of intensities of the problem behaviors and the extent to which
+                    he/she or others may be
+                    hurt or injured from the problem behavior.</p>
+                <textarea id="enddiscribe7" name="enddiscribe7"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <br>
+            <p><i>To assist in identifying precursors to dangerous problem behaviors that may be targeted in the
+                    functional analysis
+                    instead of more dangerous problem behaviors:
+                </i></p>
+            <div>
+                <p class="pb-2">9. Do the different types of problem behavior tend to occur in bursts or clusters and/or
+                    does any type of
+                    problem behavior typically precede another type of problem behavior (e.g., yells preceding hits)?
+                </p>
+                <textarea id="enddiscribe8" name="enddiscribe8"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <p><i>To determine the antecedent conditions that may be incorporated into the functional analysis test
+                    conditions:
+                </i></p>
+            <div>
+                <p class="pb-2">10. Under what conditions or situations are the problem behaviors most likely to occur?
+                </p>
+                <textarea id="enddiscribe9" name="enddiscribe9"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">11. Do the problem behaviors reliably occur during any particular activities? </p>
+                <textarea id="enddiscribe10" name="enddiscribe10"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">12. What seems to trigger the problem behavior?</p>
+                <textarea id="enddiscribe11" name="enddiscribe11"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">13. Does problem behavior occur when you break routines or interrupt activities? If so,
+                    describe.</p>
+                <textarea id="enddiscribe12" name="enddiscribe12"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">14. Does the problem behavior occur when it appears that he/she won’t get his/her way?
+                    If so, describe the</p>
+                <textarea id="enddiscribe13" name="enddiscribe13"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <p><i>To determine the test condition(s) that should be conducted and the specific type(s) of consequences
+                    that may be
+                    incorporated into the test condition(s):</i></p>
+            <div>
+                <p class="pb-2">15. How do you and others react or respond to the problem behavior?</p>
+                <textarea id="enddiscribe14" name="enddiscribe14"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">16. What do you and others do to calm him/her down once he/she engaged in the problem
+                    behavior?</p>
+                <textarea id="enddiscribe15" name="enddiscribe15"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">17. What do you and others do to distract him/her from engaging in the problem behavior?
+                </p>
+                <textarea id="enddiscribe16" name="enddiscribe16"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <p><i>In addition to the above information, to assist in developing a hunch as to why problem behavior is
+                    occurring and to
+                    assist in determining the test condition(s) to be conducted:</i></p>
+            <div>
+                <p class="pb-2">18. What do you think he/she is trying to communicate with his/her problem behavior, if
+                    anything? </p>
+                <textarea id="enddiscribe17" name="enddiscribe17"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">19. Do you think this problem behavior is a form of self stimulation? If so, what gives
+                    you that impression?</p>
+                <textarea id="enddiscribe18" name="enddiscribe18"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">20. Why do you think he/she is engaging in the problem behavior?</p>
+                <textarea id="enddiscribe19" name="enddiscribe19"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="submit" class="p-2 cursor-pointer">Submit by E-mail</button>
+            </div>
+        </form>
+    </div>
+    <div class=" flex items-center justify-center gap-5">
+        <a href="/Quation" class=" "><button>page 1</button></a>
+        <a href="/Quation-2" class=" "><button>page 2</button></a>
+        <a href="/Quation-3" class=" "><button>page 3</button></a>
+        <a href="/Quation-5" class=" "><button>page 5</button></a>
+    </div>
+</body>
+
+</html>

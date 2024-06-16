@@ -1,0 +1,2782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAI</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+
+    <style>
+        #main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #main form input[type="text"] {
+            border-radius: 100vh;
+            border: 2px solid #000;
+            padding: 6px 10px;
+            width: 100%;
+            display: inline;
+        }
+
+        #main form .flex {
+            display: flex;
+        }
+
+        #main form .item-center {
+            align-items: center;
+        }
+
+        #main form .gap-4 {
+            gap: .5rem;
+        }
+
+        #main form .no-wrap {
+            white-space: nowrap;
+        }
+
+        #main form .flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        #main form .apprence-none {
+            appearance: none;
+        }
+
+        #main form .check-lable {
+            width: 3.5rem;
+            height: 3.5rem;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 800;
+        }
+
+        #main form input[name="testchecks"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks2"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks3"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks4"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks5"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks6"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks7"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks8"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks9"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks10"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks11"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks12"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks13"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks14"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks15"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks16"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks17"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks18"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks19"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks20"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks21"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks22"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks23"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks24"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks25"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks26"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks27"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks28"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks29"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks30"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks31"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks32"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks33"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks34"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks35"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+
+        #main form input[name="testchecks36"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+
+        #main form input[name="testchecks37"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+
+        #main form input[name="testchecks38"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks39"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks40"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks41"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks42"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks43"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks44"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks45"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks46"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks47"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks48"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks49"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks50"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form input[name="testchecks51"]:checked~.check-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main form .border-b-1 {
+            border-bottom: 1px solid #212121;
+        }
+
+        #main form .pb-4 {
+            padding-bottom: 16px;
+        }
+
+        #main form .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h3 class="text-center"><i>Motivation Assessment Scale II <br>
+                Test Version – 2.0</i></h3>
+
+        <form action="" method="post">
+            <div class="flex item-center gap-4">
+                <label for="testname" class="no-wrap"><b>Name:</b></label>
+                <input type="text" id="testname" name="testname">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testage" class="no-wrap"><b>Age:</b></label>
+                <input type="date" id="testage" name="testage">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testrater" class="no-wrap"><b>Rater:</b></label>
+                <input type="text" id="testrater" name="testrater">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testtdate" class="no-wrap"><b>Today’s Date:</b></label>
+                <input type="date" id="testtdate" name="testtdate">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testdisc" class="no-wrap"><b>Behavior Description:</b> </label>
+                <input type="text" id="testdisc" name="testdisc">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="testsdisc" class="no-wrap"><b>Setting Description:</b></label>
+                <input type="text" id="testsdisc" name="testsdisc">
+            </div>
+            <br>
+            <h3 class="text-center"><i>Frequency Description (circle only one): More than once per;
+                    Year month week day hour</i></h3>
+
+            <br>
+            <div>
+                <span><strong>Name:</strong></span>
+                <span>Enter the name of the individual with the problem behavior.</span>
+            </div>
+
+            <br>
+            <div>
+                <span><strong>Rater:</strong></span>
+                <span>Enter the name of the person filling out the scale or being interviewed.</span>
+            </div>
+
+            <br>
+            <div>
+                <h4>Behavior Description:</h4>
+                <p>Enter a specific behavior (e.g., hits his head) rather than a more general description of
+                    the individual’s behavior (e.g., he gets upset).</p>
+            </div>
+
+            <br>
+            <div>
+                <h4>Setting Description:</h4>
+                <p>Specify the situation where the behavior is a problem (e.g., at home after dinner, during
+                    lunch, during one-on-one teaching).</p>
+            </div>
+
+            <br>
+
+            <h3 class="text-center">INSTRUCTIONS TO RATERS </h3>
+
+            <br>
+
+            <p>Rate each of the items on the following pages by circling the number that corresponds
+                to about how often the individual engages in the behavior indicated, in the setting which
+                has been selected.
+            </p>
+
+            <h3 class="text-center"><i>MOTIVATION ASSESSMENT SCALE - II
+                    TEST EDITION – 2.0</i></h3>
+            <br>
+
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">1. Would the behavior occur continuously, over and over, if
+                    this person was left alone for long periods of time? (For
+                    example, several hours.)
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck183" class="apprence-none">
+                        <label for="testcheck183" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck184" class="apprence-none">
+                        <label for="testcheck184" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck185" class="apprence-none">
+                        <label for="testcheck185" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck186" class="apprence-none">
+                        <label for="testcheck186" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck187" class="apprence-none">
+                        <label for="testcheck187" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck188" class="apprence-none">
+                        <label for="testcheck188" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks27" id="testcheck189" class="apprence-none">
+                        <label for="testcheck189" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">2. Does the behavior occur following a request to perform a
+                    difficult task?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck190" class="apprence-none">
+                        <label for="testcheck190" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck191" class="apprence-none">
+                        <label for="testcheck191" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck192" class="apprence-none">
+                        <label for="testcheck192" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck193" class="apprence-none">
+                        <label for="testcheck193" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck194" class="apprence-none">
+                        <label for="testcheck194" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck195" class="apprence-none">
+                        <label for="testcheck195" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks28" id="testcheck196" class="apprence-none">
+                        <label for="testcheck196" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">3. Does this behavior occur when others are attending to him
+                    or her?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck197" class="apprence-none">
+                        <label for="testcheck197" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck198" class="apprence-none">
+                        <label for="testcheck198" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck199" class="apprence-none">
+                        <label for="testcheck199" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck200" class="apprence-none">
+                        <label for="testcheck200" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck201" class="apprence-none">
+                        <label for="testcheck201" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck202" class="apprence-none">
+                        <label for="testcheck202" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks29" id="testcheck203" class="apprence-none">
+                        <label for="testcheck203" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">4. Does the behavior occur in response to your talking to
+                    other persons in the room?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck204" class="apprence-none">
+                        <label for="testcheck204" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck205" class="apprence-none">
+                        <label for="testcheck205" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck206" class="apprence-none">
+                        <label for="testcheck206" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck207" class="apprence-none">
+                        <label for="testcheck207" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck208" class="apprence-none">
+                        <label for="testcheck208" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck209" class="apprence-none">
+                        <label for="testcheck209" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks30" id="testcheck210" class="apprence-none">
+                        <label for="testcheck210" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">5. Does the behavior ever occur to get a toy, food, or activity
+                    that this person has been told that he or she can't have?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck211" class="apprence-none">
+                        <label for="testcheck211" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck212" class="apprence-none">
+                        <label for="testcheck212" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck213" class="apprence-none">
+                        <label for="testcheck213" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck214" class="apprence-none">
+                        <label for="testcheck214" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck215" class="apprence-none">
+                        <label for="testcheck215" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck216" class="apprence-none">
+                        <label for="testcheck216" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks31" id="testcheck217" class="apprence-none">
+                        <label for="testcheck217" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">6. Would the behavior occur repeatedly, in the same way, for
+                    very long periods of time, if no one was around? (For
+                    example, rocking back and forth for over an hour)
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck218" class="apprence-none">
+                        <label for="testcheck218" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck219" class="apprence-none">
+                        <label for="testcheck219" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck220" class="apprence-none">
+                        <label for="testcheck220" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck221" class="apprence-none">
+                        <label for="testcheck221" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck222" class="apprence-none">
+                        <label for="testcheck222" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck223" class="apprence-none">
+                        <label for="testcheck223" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks32" id="testcheck224" class="apprence-none">
+                        <label for="testcheck224" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">7. Does the behavior occur when any request is made of this
+                    person?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck225" class="apprence-none">
+                        <label for="testcheck225" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck226" class="apprence-none">
+                        <label for="testcheck226" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck227" class="apprence-none">
+                        <label for="testcheck227" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck228" class="apprence-none">
+                        <label for="testcheck228" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck229" class="apprence-none">
+                        <label for="testcheck229" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck230" class="apprence-none">
+                        <label for="testcheck230" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks33" id="testcheck231" class="apprence-none">
+                        <label for="testcheck231" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">8. Does the behavior occur when there are many people
+                    around?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck232" class="apprence-none">
+                        <label for="testcheck232" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck233" class="apprence-none">
+                        <label for="testcheck233" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck234" class="apprence-none">
+                        <label for="testcheck234" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck235" class="apprence-none">
+                        <label for="testcheck235" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck236" class="apprence-none">
+                        <label for="testcheck236" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck237" class="apprence-none">
+                        <label for="testcheck237" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks34" id="testcheck238" class="apprence-none">
+                        <label for="testcheck238" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">9. Does the behavior occur whenever you stop paying
+                    attention to this person?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck239" class="apprence-none">
+                        <label for="testcheck239" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck240" class="apprence-none">
+                        <label for="testcheck240" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck241" class="apprence-none">
+                        <label for="testcheck241" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck242" class="apprence-none">
+                        <label for="testcheck242" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck243" class="apprence-none">
+                        <label for="testcheck243" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck244" class="apprence-none">
+                        <label for="testcheck244" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks35" id="testcheck245" class="apprence-none">
+                        <label for="testcheck245" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">10. Does the behavior occur when you take away a favorite
+                    toy, food, or activity?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck246" class="apprence-none">
+                        <label for="testcheck246" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck247" class="apprence-none">
+                        <label for="testcheck247" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck248" class="apprence-none">
+                        <label for="testcheck248" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck249" class="apprence-none">
+                        <label for="testcheck249" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck250" class="apprence-none">
+                        <label for="testcheck250" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck251" class="apprence-none">
+                        <label for="testcheck251" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks36" id="testcheck252" class="apprence-none">
+                        <label for="testcheck252" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">11. Does it appear to you that this person enjoys performing
+                    the behavior? (It feels,
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck253" class="apprence-none">
+                        <label for="testcheck253" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck254" class="apprence-none">
+                        <label for="testcheck254" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck256" class="apprence-none">
+                        <label for="testcheck256" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck257" class="apprence-none">
+                        <label for="testcheck257" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck258" class="apprence-none">
+                        <label for="testcheck258" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck259" class="apprence-none">
+                        <label for="testcheck259" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks37" id="testcheck260" class="apprence-none">
+                        <label for="testcheck260" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">12. Does the person seem to do the behavior to upset or
+                    annoy you when you are trying to get him or her to do
+                    what you ask?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck261" class="apprence-none">
+                        <label for="testcheck261" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck262" class="apprence-none">
+                        <label for="testcheck262" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck263" class="apprence-none">
+                        <label for="testcheck263" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck264" class="apprence-none">
+                        <label for="testcheck264" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck265" class="apprence-none">
+                        <label for="testcheck265" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck266" class="apprence-none">
+                        <label for="testcheck266" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks38" id="testcheck267" class="apprence-none">
+                        <label for="testcheck267" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">13. Does the behavior stop occurring when he or she is left
+                    alone?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck268" class="apprence-none">
+                        <label for="testcheck268" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck269" class="apprence-none">
+                        <label for="testcheck269" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck270" class="apprence-none">
+                        <label for="testcheck270" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck271" class="apprence-none">
+                        <label for="testcheck271" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck272" class="apprence-none">
+                        <label for="testcheck272" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck273" class="apprence-none">
+                        <label for="testcheck273" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks39" id="testcheck274" class="apprence-none">
+                        <label for="testcheck274" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">14. Does this person seem to do this behavior to upset or
+                    annoy you when you are not paying attention to him or
+                    her? (For example, if you are sitting in a separate room,
+                    interacting with another person)
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck275" class="apprence-none">
+                        <label for="testcheck275" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck276" class="apprence-none">
+                        <label for="testcheck276" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck277" class="apprence-none">
+                        <label for="testcheck277" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck278" class="apprence-none">
+                        <label for="testcheck278" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck279" class="apprence-none">
+                        <label for="testcheck279" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck280" class="apprence-none">
+                        <label for="testcheck280" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks40" id="testcheck281" class="apprence-none">
+                        <label for="testcheck281" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">15. Does the behavior stop occurring shortly after you give
+                    this person the toy, food, or activity he or she has
+                    requested?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck282" class="apprence-none">
+                        <label for="testcheck282" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck283" class="apprence-none">
+                        <label for="testcheck283" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck284" class="apprence-none">
+                        <label for="testcheck284" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck285" class="apprence-none">
+                        <label for="testcheck285" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck286" class="apprence-none">
+                        <label for="testcheck286" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck287" class="apprence-none">
+                        <label for="testcheck287" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks41" id="testcheck288" class="apprence-none">
+                        <label for="testcheck288" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">16. When the behavior is occurring, does this person seem
+                    calm and unaware of anything else going on around him
+                    or her?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck289" class="apprence-none">
+                        <label for="testcheck289" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck290" class="apprence-none">
+                        <label for="testcheck290" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck291" class="apprence-none">
+                        <label for="testcheck291" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck292" class="apprence-none">
+                        <label for="testcheck292" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck293" class="apprence-none">
+                        <label for="testcheck293" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck294" class="apprence-none">
+                        <label for="testcheck294" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks42" id="testcheck295" class="apprence-none">
+                        <label for="testcheck295" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">17. Does this person seem to do the behavior to get people to
+                    stop paying attention to him or her?
+                <p>
+                <div class="flex items-center flex-nowrap flex-1 gap-4">
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck296" class="apprence-none">
+                        <label for="testcheck296" class="check-lable">Never<br>
+                            0 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck297" class="apprence-none">
+                        <label for="testcheck297" class="check-lable">Almost<br>
+                            Never <br>
+                            1</label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck298" class="apprence-none">
+                        <label for="testcheck298" class="check-lable">Seldom <br>
+                            2 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck299" class="apprence-none">
+                        <label for="testcheck299" class="check-lable"><span>Half the <br>
+                                Time <br>
+                                3 </span></label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck300" class="apprence-none">
+                        <label for="testcheck300" class="check-lable">Usually<br>
+                            4 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck301" class="apprence-none">
+                        <label for="testcheck301" class="check-lable">Almost<br>
+                            Always<br>
+                            5 </label>
+                    </div>
+                    <div class="flex-shirink">
+                        <input type="radio" name="testchecks43" id="testcheck302" class="apprence-none">
+                        <label for="testcheck302" class="check-lable">Always<br>
+                            6</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">18. Does the behavior seem to occur when this person has
+                    been told that he or she can't do something he or she had
+                    wanted to do?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck303" class="apprence-none">
+                            <label for="testcheck303" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck304" class="apprence-none">
+                            <label for="testcheck304" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck305" class="apprence-none">
+                            <label for="testcheck305" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck306" class="apprence-none">
+                            <label for="testcheck306" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck307" class="apprence-none">
+                            <label for="testcheck307" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck308" class="apprence-none">
+                            <label for="testcheck308" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks44" id="testcheck309" class="apprence-none">
+                            <label for="testcheck309" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+                
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">19. Does this person ignore others when engaging in this 
+                    behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck310" class="apprence-none">
+                            <label for="testcheck310" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck311" class="apprence-none">
+                            <label for="testcheck311" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck312" class="apprence-none">
+                            <label for="testcheck312" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck313" class="apprence-none">
+                            <label for="testcheck313" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck314" class="apprence-none">
+                            <label for="testcheck314" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck315" class="apprence-none">
+                            <label for="testcheck315" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck316" class="apprence-none">
+                            <label for="testcheck316" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+                
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">20. Does the behavior stop occurring shortly after (one to five 
+                    minutes) you stop working or making demands of this 
+                    person?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks46" id="testcheck317" class="apprence-none">
+                            <label for="testcheck317" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks46" id="testcheck318" class="apprence-none">
+                            <label for="testcheck318" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks46" id="testcheck319" class="apprence-none">
+                            <label for="testcheck319" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks46" id="testcheck320" class="apprence-none">
+                            <label for="testcheck320" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks46" id="testcheck321" class="apprence-none">
+                            <label for="testcheck321" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks46" id="testcheck322" class="apprence-none">
+                            <label for="testcheck322" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks45" id="testcheck323" class="apprence-none">
+                            <label for="testcheck323" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+                  
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">21. Do others try and prevent this behavior by not attending to 
+                    him or her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck324" class="apprence-none">
+                            <label for="testcheck324" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck325" class="apprence-none">
+                            <label for="testcheck325" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck326" class="apprence-none">
+                            <label for="testcheck326" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck327" class="apprence-none">
+                            <label for="testcheck327" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck328" class="apprence-none">
+                            <label for="testcheck328" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck329" class="apprence-none">
+                            <label for="testcheck329" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks47" id="testcheck330" class="apprence-none">
+                            <label for="testcheck330" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+              
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">22. Does this person seem to do the behavior to get you to 
+                    spend some time with him or her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck331" class="apprence-none">
+                            <label for="testcheck331" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck332" class="apprence-none">
+                            <label for="testcheck332" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck333" class="apprence-none">
+                            <label for="testcheck333" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck334" class="apprence-none">
+                            <label for="testcheck334" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck335" class="apprence-none">
+                            <label for="testcheck335" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck336" class="apprence-none">
+                            <label for="testcheck336" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks48" id="testcheck337" class="apprence-none">
+                            <label for="testcheck337" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">23. Does this person always have access to a particular toy, 
+                    food, item or activity in an effort to avoid this behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck338" class="apprence-none">
+                            <label for="testcheck338" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck339" class="apprence-none">
+                            <label for="testcheck339" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck340" class="apprence-none">
+                            <label for="testcheck340" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck341" class="apprence-none">
+                            <label for="testcheck341" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck342" class="apprence-none">
+                            <label for="testcheck342" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck343" class="apprence-none">
+                            <label for="testcheck343" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks49" id="testcheck344" class="apprence-none">
+                            <label for="testcheck344" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">24. Does it seem that this behavior occurs most often during 
+                    “down time”, when there isn't much activity going on in the 
+                    classroom/work setting?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck345" class="apprence-none">
+                            <label for="testcheck345" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck346" class="apprence-none">
+                            <label for="testcheck346" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck347" class="apprence-none">
+                            <label for="testcheck347" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck348" class="apprence-none">
+                            <label for="testcheck348" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck349" class="apprence-none">
+                            <label for="testcheck349" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck350" class="apprence-none">
+                            <label for="testcheck350" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks50" id="testcheck351" class="apprence-none">
+                            <label for="testcheck351" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="flex items-center border-b-1 pb-4">
+                <p class="flex-1">25. Is this person not asked to do certain tasks because of this 
+                    behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck352" class="apprence-none">
+                            <label for="testcheck352" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck353" class="apprence-none">
+                            <label for="testcheck353" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck354" class="apprence-none">
+                            <label for="testcheck354" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck355" class="apprence-none">
+                            <label for="testcheck355" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck356" class="apprence-none">
+                            <label for="testcheck356" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck357" class="apprence-none">
+                            <label for="testcheck357" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks51" id="testcheck358" class="apprence-none">
+                            <label for="testcheck358" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+            </div>
+                <!-- new -->
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">26. Do others try and “prevent” this behavior by talking to or
+                        paying attention to him/her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck1" class="apprence-none">
+                            <label for="testcheck1" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck2" class="apprence-none">
+                            <label for="testcheck2" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck3" class="apprence-none">
+                            <label for="testcheck3" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck4" class="apprence-none">
+                            <label for="testcheck4" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck5" class="apprence-none">
+                            <label for="testcheck5" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck6" class="apprence-none">
+                            <label for="testcheck6" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks" id="testcheck7" class="apprence-none">
+                            <label for="testcheck7" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">27. Does this behavior occur when he or she seems bored?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck8" class="apprence-none">
+                            <label for="testcheck8" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck9" class="apprence-none">
+                            <label for="testcheck9" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck10" class="apprence-none">
+                            <label for="testcheck10" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck11" class="apprence-none">
+                            <label for="testcheck11" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck12" class="apprence-none">
+                            <label for="testcheck12" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck13" class="apprence-none">
+                            <label for="testcheck13" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks2" id="testcheck14" class="apprence-none">
+                            <label for="testcheck14" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">28. Does the behavior allow the person to “get out of” doing
+                        what you ask of him/her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck15" class="apprence-none">
+                            <label for="testcheck15" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck16" class="apprence-none">
+                            <label for="testcheck16" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck17" class="apprence-none">
+                            <label for="testcheck17" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck18" class="apprence-none">
+                            <label for="testcheck18" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck19" class="apprence-none">
+                            <label for="testcheck19" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck20" class="apprence-none">
+                            <label for="testcheck20" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks3" id="testcheck21" class="apprence-none">
+                            <label for="testcheck21" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">29. Does this person spend much time alone, in an effort by
+                        others to stop this behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck22" class="apprence-none">
+                            <label for="testcheck22" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck23" class="apprence-none">
+                            <label for="testcheck23" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck24" class="apprence-none">
+                            <label for="testcheck24" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck25" class="apprence-none">
+                            <label for="testcheck25" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck26" class="apprence-none">
+                            <label for="testcheck26" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck27" class="apprence-none">
+                            <label for="testcheck27" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks4" id="testcheck28" class="apprence-none">
+                            <label for="testcheck28" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">30. Does this person always seem to have one-on-one
+                        attention from others in an effort to prevent this behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck29" class="apprence-none">
+                            <label for="testcheck29" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck30" class="apprence-none">
+                            <label for="testcheck30" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck31" class="apprence-none">
+                            <label for="testcheck31" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck32" class="apprence-none">
+                            <label for="testcheck32" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck33" class="apprence-none">
+                            <label for="testcheck33" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck34" class="apprence-none">
+                            <label for="testcheck34" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks5" id="testcheck35" class="apprence-none">
+                            <label for="testcheck35" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">31. Would this behavior occur if he or she was denied access
+                        to something he/she wanted?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck36" class="apprence-none">
+                            <label for="testcheck36" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck37" class="apprence-none">
+                            <label for="testcheck37" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck38" class="apprence-none">
+                            <label for="testcheck38" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck39" class="apprence-none">
+                            <label for="testcheck39" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck40" class="apprence-none">
+                            <label for="testcheck40" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck41" class="apprence-none">
+                            <label for="testcheck41" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks6" id="testcheck42" class="apprence-none">
+                            <label for="testcheck42" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">32. Does engaging in this behavior seem to make him or her
+                        happy, content, or less frustrated?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck43" class="apprence-none">
+                            <label for="testcheck43" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck44" class="apprence-none">
+                            <label for="testcheck44" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck45" class="apprence-none">
+                            <label for="testcheck45" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck46" class="apprence-none">
+                            <label for="testcheck46" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck47" class="apprence-none">
+                            <label for="testcheck47" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck48" class="apprence-none">
+                            <label for="testcheck48" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks7" id="testcheck49" class="apprence-none">
+                            <label for="testcheck49" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">33. Does the behavior seem to occur most often when others
+                        try to interact with him or her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck50" class="apprence-none">
+                            <label for="testcheck50" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck51" class="apprence-none">
+                            <label for="testcheck51" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck52" class="apprence-none">
+                            <label for="testcheck52" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck53" class="apprence-none">
+                            <label for="testcheck53" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck54" class="apprence-none">
+                            <label for="testcheck54" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck55" class="apprence-none">
+                            <label for="testcheck55" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks8" id="testcheck56" class="apprence-none">
+                            <label for="testcheck56" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">34. Does the presence of other people make this behavior
+                        less likely to occur?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck57" class="apprence-none">
+                            <label for="testcheck57" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck58" class="apprence-none">
+                            <label for="testcheck58" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck59" class="apprence-none">
+                            <label for="testcheck59" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck60" class="apprence-none">
+                            <label for="testcheck60" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck61" class="apprence-none">
+                            <label for="testcheck61" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck62" class="apprence-none">
+                            <label for="testcheck62" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks9" id="testcheck63" class="apprence-none">
+                            <label for="testcheck63" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">35. Would giving him or her a favorite object, food or other
+                        item stop the behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck64" class="apprence-none">
+                            <label for="testcheck64" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck65" class="apprence-none">
+                            <label for="testcheck65" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck66" class="apprence-none">
+                            <label for="testcheck66" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck67" class="apprence-none">
+                            <label for="testcheck67" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck68" class="apprence-none">
+                            <label for="testcheck68" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck69" class="apprence-none">
+                            <label for="testcheck69" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks10" id="testcheck70" class="apprence-none">
+                            <label for="testcheck70" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">36. Are requests not made of this person for fear they will
+                        engage in the behavior?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck71" class="apprence-none">
+                            <label for="testcheck71" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck72" class="apprence-none">
+                            <label for="testcheck72" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck73" class="apprence-none">
+                            <label for="testcheck73" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck74" class="apprence-none">
+                            <label for="testcheck74" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck75" class="apprence-none">
+                            <label for="testcheck75" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck76" class="apprence-none">
+                            <label for="testcheck76" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks11" id="testcheck77" class="apprence-none">
+                            <label for="testcheck77" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">37. Does this person seem to enjoy his or her time alone?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck78" class="apprence-none">
+                            <label for="testcheck78" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck79" class="apprence-none">
+                            <label for="testcheck79" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck80" class="apprence-none">
+                            <label for="testcheck80" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck81" class="apprence-none">
+                            <label for="testcheck81" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck82" class="apprence-none">
+                            <label for="testcheck82" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck83" class="apprence-none">
+                            <label for="testcheck83" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks12" id="testcheck84" class="apprence-none">
+                            <label for="testcheck84" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">38. Does this behavior occur when everyone seems to be
+                        busy and not able to attend to him or her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck85" class="apprence-none">
+                            <label for="testcheck85" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck86" class="apprence-none">
+                            <label for="testcheck86" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck87" class="apprence-none">
+                            <label for="testcheck87" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck88" class="apprence-none">
+                            <label for="testcheck88" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck89" class="apprence-none">
+                            <label for="testcheck89" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck90" class="apprence-none">
+                            <label for="testcheck90" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks13" id="testcheck91" class="apprence-none">
+                            <label for="testcheck91" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">39. Do others try and “prevent” this behavior by giving him or
+                        her something to do, eat or play with?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck92" class="apprence-none">
+                            <label for="testcheck92" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck93" class="apprence-none">
+                            <label for="testcheck93" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck94" class="apprence-none">
+                            <label for="testcheck94" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck95" class="apprence-none">
+                            <label for="testcheck95" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck96" class="apprence-none">
+                            <label for="testcheck96" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck97" class="apprence-none">
+                            <label for="testcheck97" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks14" id="testcheck98" class="apprence-none">
+                            <label for="testcheck98" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">40. Would the behavior occur continuously, over and over, if
+                        this person was in an unstructured setting (i.e., no
+                        demands, little attention) for long periods of time? (For
+                        example, several hours)</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck99" class="apprence-none">
+                            <label for="testcheck99" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck100" class="apprence-none">
+                            <label for="testcheck100" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck101" class="apprence-none">
+                            <label for="testcheck101" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck102" class="apprence-none">
+                            <label for="testcheck102" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck103" class="apprence-none">
+                            <label for="testcheck103" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck104" class="apprence-none">
+                            <label for="testcheck104" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks15" id="testcheck105" class="apprence-none">
+                            <label for="testcheck105" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">41. Does it seem that this behavior occurs most often during
+                        group activities?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck106" class="apprence-none">
+                            <label for="testcheck106" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck107" class="apprence-none">
+                            <label for="testcheck107" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck108" class="apprence-none">
+                            <label for="testcheck108" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck109" class="apprence-none">
+                            <label for="testcheck109" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck110" class="apprence-none">
+                            <label for="testcheck110" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck111" class="apprence-none">
+                            <label for="testcheck111" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks16" id="testcheck112" class="apprence-none">
+                            <label for="testcheck112" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">42. Would the behavior occur repeatedly, in the same way, for
+                        very long periods of time? (For example, rocking back
+                        and forth for over an hour</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck113" class="apprence-none">
+                            <label for="testcheck113" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck114" class="apprence-none">
+                            <label for="testcheck114" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck115" class="apprence-none">
+                            <label for="testcheck115" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck116" class="apprence-none">
+                            <label for="testcheck116" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck117" class="apprence-none">
+                            <label for="testcheck117" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck118" class="apprence-none">
+                            <label for="testcheck118" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks17" id="testcheck119" class="apprence-none">
+                            <label for="testcheck119" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">43. Does the person seem to do the behavior to upset or
+                        annoy you when you are interacting with him or her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck120" class="apprence-none">
+                            <label for="testcheck120" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck121" class="apprence-none">
+                            <label for="testcheck121" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck122" class="apprence-none">
+                            <label for="testcheck122" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck123" class="apprence-none">
+                            <label for="testcheck123" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck124" class="apprence-none">
+                            <label for="testcheck124" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck125" class="apprence-none">
+                            <label for="testcheck125" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks18" id="testcheck126" class="apprence-none">
+                            <label for="testcheck126" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">44. Does this person seem to like having other people around
+                        him or her?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck127" class="apprence-none">
+                            <label for="testcheck127" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck128" class="apprence-none">
+                            <label for="testcheck128" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck129" class="apprence-none">
+                            <label for="testcheck129" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck130" class="apprence-none">
+                            <label for="testcheck130" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck131" class="apprence-none">
+                            <label for="testcheck131" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck132" class="apprence-none">
+                            <label for="testcheck132" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks19" id="testcheck133" class="apprence-none">
+                            <label for="testcheck133" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">45. Does saying “no” to a request start to make him or her
+                        upset?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck134" class="apprence-none">
+                            <label for="testcheck134" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck135" class="apprence-none">
+                            <label for="testcheck135" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck136" class="apprence-none">
+                            <label for="testcheck136" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck137" class="apprence-none">
+                            <label for="testcheck137" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck138" class="apprence-none">
+                            <label for="testcheck138" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck139" class="apprence-none">
+                            <label for="testcheck139" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks20" id="testcheck140" class="apprence-none">
+                            <label for="testcheck140" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">46. Does this behavior occur when he or she is expected to
+                        work independently?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck141" class="apprence-none">
+                            <label for="testcheck141" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck142" class="apprence-none">
+                            <label for="testcheck142" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck143" class="apprence-none">
+                            <label for="testcheck143" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck144" class="apprence-none">
+                            <label for="testcheck144" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck145" class="apprence-none">
+                            <label for="testcheck145" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck146" class="apprence-none">
+                            <label for="testcheck146" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks21" id="testcheck147" class="apprence-none">
+                            <label for="testcheck147" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">47. Does it seem this behavior most often occurs during
+                        instructional periods?</p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck148" class="apprence-none">
+                            <label for="testcheck148" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck149" class="apprence-none">
+                            <label for="testcheck149" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck150" class="apprence-none">
+                            <label for="testcheck150" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck151" class="apprence-none">
+                            <label for="testcheck151" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck152" class="apprence-none">
+                            <label for="testcheck152" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck153" class="apprence-none">
+                            <label for="testcheck153" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks22" id="testcheck154" class="apprence-none">
+                            <label for="testcheck154" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">48. Does the behavior stop occurring shortly after (one to five
+                        minutes) you leave him or her alone?
+                    <p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck155" class="apprence-none">
+                            <label for="testcheck155" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck156" class="apprence-none">
+                            <label for="testcheck156" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck157" class="apprence-none">
+                            <label for="testcheck157" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck158" class="apprence-none">
+                            <label for="testcheck158" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck159" class="apprence-none">
+                            <label for="testcheck159" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck160" class="apprence-none">
+                            <label for="testcheck160" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks23" id="testcheck161" class="apprence-none">
+                            <label for="testcheck161" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">49. Does the behavior stop when you pay attention to this
+                        person?
+                    <p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck162" class="apprence-none">
+                            <label for="testcheck162" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck163" class="apprence-none">
+                            <label for="testcheck163" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck164" class="apprence-none">
+                            <label for="testcheck164" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck165" class="apprence-none">
+                            <label for="testcheck165" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck166" class="apprence-none">
+                            <label for="testcheck166" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck167" class="apprence-none">
+                            <label for="testcheck167" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks24" id="testcheck168" class="apprence-none">
+                            <label for="testcheck168" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">50. Does the behavior occur when you indicate that it is time
+                        to move to a new activity?
+                    <p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck169" class="apprence-none">
+                            <label for="testcheck169" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck170" class="apprence-none">
+                            <label for="testcheck170" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck171" class="apprence-none">
+                            <label for="testcheck171" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck172" class="apprence-none">
+                            <label for="testcheck172" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck173" class="apprence-none">
+                            <label for="testcheck173" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck174" class="apprence-none">
+                            <label for="testcheck174" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks25" id="testcheck175" class="apprence-none">
+                            <label for="testcheck175" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center border-b-1 pb-4">
+                    <p class="flex-1">51. Does this person seem “driven” to complete the behavior?
+                    <p>
+                    <div class="flex items-center flex-nowrap flex-1 gap-4">
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck176" class="apprence-none">
+                            <label for="testcheck176" class="check-lable">Never<br>
+                                0 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck177" class="apprence-none">
+                            <label for="testcheck177" class="check-lable">Almost<br>
+                                Never <br>
+                                1</label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck178" class="apprence-none">
+                            <label for="testcheck178" class="check-lable">Seldom <br>
+                                2 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck179" class="apprence-none">
+                            <label for="testcheck179" class="check-lable"><span>Half the <br>
+                                    Time <br>
+                                    3 </span></label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck180" class="apprence-none">
+                            <label for="testcheck180" class="check-lable">Usually<br>
+                                4 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck181" class="apprence-none">
+                            <label for="testcheck181" class="check-lable">Almost<br>
+                                Always<br>
+                                5 </label>
+                        </div>
+                        <div class="flex-shirink">
+                            <input type="radio" name="testchecks26" id="testcheck182" class="apprence-none">
+                            <label for="testcheck182" class="check-lable">Always<br>
+                                6</label>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    <div class=" flex items-center justify-center gap-5">
+        <a href="/Quation" class=" "><button>page 1</button></a>
+        <a href="/Quation-3" class=" "><button>page 3</button></a>
+        <a href="/Quation-4" class=" "><button>page 4</button></a>
+        <a href="/Quation-5" class=" "><button>page 5</button></a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAI</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #main form input[type="text"] {
+            border-radius: 100vh;
+            border: 2px solid #000;
+            padding: 6px 10px;
+            width: 100%;
+            display: inline;
+        }
+
+        #main form .flex {
+            display: flex;
+        }
+
+        #main form .item-center {
+            align-items: center;
+        }
+
+        #main form .gap-4 {
+            gap: .5rem;
+        }
+
+        #main form .no-wrap {
+            white-space: nowrap;
+        }
+
+        #main form .flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        #main form .apprence-none {
+            appearance: none;
+        }
+
+        #main .text-center {
+            text-align: center;
+        }
+
+        #main .pt-2 {
+            padding-top: .5rem;
+        }
+
+        #main .mr-4 {
+            margin-right: 1rem;
+        }
+
+        #main .flex-1 {
+            flex: 1;
+        }
+
+        #main .justify-between {
+            justify-content: space-between;
+        }
+
+        #main .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        #main form .scrcheck-lable {
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 800;
+            padding: 5px;
+        }
+
+        #main form input[name="scrinract"]:checked~.scrcheck-lable {
+            background: #b62020;
+            color: #fff;
+        }
+
+        #main .border-b-1 {
+            border-bottom: 1px solid #212121;
+        }
+
+        #main .pb-2 {
+            padding-bottom: .5rem;
+        }
+
+        #main .gap-2 {
+            gap: .5rem;
+        }
+
+        #main .gap-4 {
+            gap: 1rem;
+        }
+
+        #main .h-28 {
+            height: 7rem;
+        }
+
+        #main .border-r-none {
+            border-radius: inherit !important;
+        }
+
+        #main .w-100 {
+            width: 100%;
+        }
+
+        #main .p-2 {
+            padding: .5rem;
+        }
+
+        #main .resize-none {
+            resize: none;
+        }
+
+        #main .border-2 {
+            border: 2px solid #212121 !important;
+        }
+
+        #main .cursor-pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h2 class="text-center">FUNCTIONAL ASSESSMENT INTERVIEW (FAI) for Teachers</h2>
+        <h4 class="pb-2 text-center">(School personnel to conduct interview)</h4>
+        <form action="#" method="post">
+            <div class="flex item-center justify-between">
+                <div class="flex item-center gap-4">
+                    <label for="faistudent" class="no-wrap">Student:</b></label>
+                    <input type="text" id="faistudent" name="faistudent">
+                </div>
+                <br>
+                <div class="flex item-center gap-4">
+                    <label for="faiage" class="no-wrap"><b>Age</b></label>
+                    <input type="text" id="faiage" name="faiage">
+                </div>
+                <div class="flex item-center gap-4 no-wrap">
+                    <div class="flex item-center gap-2 no-wrap">
+                        <label for="faimale"> Male</label>
+                        <input type="radio" id="faimale" name="faigender">
+                    </div>
+                    <div class="flex item-center gap-2 no-wrap">
+                        <label for="faifemale">Female</label>
+                        <input type="radio" id="faifemale" name="faigender">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="faiinterviewe" class="no-wrap"><b>Date of Interview:</b></label>
+                <input type="date" id="faiinterviewe" name="faiinterviewe">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="faiinterviewer" class="no-wrap"><b>Interviewer: </b></label>
+                <input type="text" id="faiinterviewer" name="faiinterviewer">
+            </div>
+
+            <br>
+
+            <div class="flex item-center gap-4">
+                <label for="fairesponde" class="no-wrap"><b>Respondents:</b> </label>
+                <input type="text" id="fairesponde" name="fairesponde">
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">1. Describe the behaviour that is causing the most concern. </p>
+                <textarea name="faibehaviour1" id="faibehaviour1"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">2. Is the behaviour a safety concern to self or others? If yes, please explain</p>
+                <textarea name="faibehaviour2" id="faibehaviour2"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <br>
+            <h3>3. Times of Day/Settings: </h3>
+            <br>
+            <div>
+                <p class="pb-2">When and where is the behaviour most likely to happen?</p>
+                <textarea name="faibehaviour3" id="faibehaviour3"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">When and where is the behaviour least likely to happen?</p>
+                <textarea name="faibehaviour4" id="faibehaviour4"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <br>
+            <h3>4. People:</h3>
+            <br>
+            <div>
+                <p class="pb-2">With whom is the behaviour most likely to occur? </p>
+                <textarea name="faibehaviour5" id="faibehaviour5"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">With whom is the behaviour least likely to occur?</p>
+                <textarea name="faibehaviour6" id="faibehaviour6"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <p>5. Activity: What activities are most and least likely to produce the behaviour (e.g., task
+                duration, preferred or non-preferred, difficult or easy, novel or familiar, boring or
+                stimulating)?</p>
+            <div>
+                <h4 class="pb-2">Most Likely:</h4>
+                <textarea name="faibehaviour7" id="faibehaviour7"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <h4 class="pb-2">Least Likely: </h4>
+                <textarea name="faibehaviour8" id="faibehaviour8"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">6. Are there particular situations or events not listed above that sometimes seem to
+                    “set off”
+                    the behaviour, such as particular demands, noises, lights, clothing, people…? </p>
+                <textarea name="faibehaviour9" id="faibehaviour9"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">7. Describe the ways the student is able to verbally or nonverbally ask for assistance.
+                </p>
+                <textarea name="faibehaviour10" id="faibehaviour10"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">8. Does the student respond appropriately to requests or instructions (how many, simple,
+                    complex)?</p>
+                <textarea name="faibehaviour11" id="faibehaviour11"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">9. Is the student aware of the implications of his/her actions? </p>
+                <textarea name="faibehaviour12" id="faibehaviour12"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">10. What are the things the person likes and are reinforcing for him or her?</p>
+                <textarea name="faibehaviour13" id="faibehaviour13"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <br>
+            <div class="flex item-center justify-between gap-4 flex-wrap">
+                <div class="flex item-center gap-2 no-wrap">
+                    <p class="pb-2">a) food items</p>
+                    <input type="text" name="faibehaviour14" id="faibehaviour14">
+                </div>
+                <div class="flex item-center gap-2 no-wrap">
+                    <p class="pb-2"> objects</p>
+                    <input type="text" name="faibehaviour15" id="faibehaviour15">
+                </div>
+                <div class="flex item-center gap-2 no-wrap">
+                    <p class="pb-2"> activities</p>
+                    <input type="text" name="faibehaviour16" id="faibehaviour16">
+                </div>
+                <div class="flex item-center gap-2 no-wrap">
+                    <p class="pb-2">people</p>
+                    <input type="text" name="faibehaviour17" id="faibehaviour17">
+                </div>
+                <div class="flex item-center gap-2 no-wrap">
+                    <p class="pb-2">other</p>
+                    <input type="text" name="faibehaviour18" id="faibehaviour18">
+                </div>
+            </div>
+            <br>
+            <div>
+                <p class="pb-2">b) List the activities the student is good at or enjoys.</p>
+                <textarea name="faibehaviour19" id="faibehaviour19"
+                    class="h-28 border-r-none w-100 p-2 resize-none border-2"></textarea>
+            </div>
+            <div class=" items-center flex justify-center">
+            <button class="text-center" type="submit">submit</button>
+        </div>
+        </form>
+    </div>
+    <div class=" flex items-center  justify-center gap-5">
+        <a href="/Quation" class=" "><button>page 1</button></a>
+        <a href="/Quation-2" class=" "><button>page 2</button></a>
+        <a href="/Quation-3" class=" "><button>page 3</button></a>
+        <a href="/Quation-4" class=" "><button>page 4</button></a>
+    </div>
+</body>
+
+</html>

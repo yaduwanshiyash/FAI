@@ -54,8 +54,20 @@ const transporter = nodemailer.createTransport({
 router.get('/', function(req, res, next) {
   res.render('index');
 });
-router.get('/feed',isLoggedIn, function(req, res, next) {
+router.get('/Quation',isLoggedIn, function(req, res, next) {
   res.render('feed');
+});
+router.get('/Quation-2',isLoggedIn, function(req, res, next) {
+  res.render('test2');
+});
+router.get('/Quation-3',isLoggedIn, function(req, res, next) {
+  res.render('test3');
+});
+router.get('/Quation-4',isLoggedIn, function(req, res, next) {
+  res.render('test4');
+});
+router.get('/Quation-5',isLoggedIn, function(req, res, next) {
+  res.render('test5');
 });
 
 router.get('/profile', isLoggedIn, async function(req, res, next) {
@@ -89,7 +101,7 @@ router.post('/register', function(req, res, next) {
     userModel.register(userdata, req.body.password)
       .then(function(registereduser) {
         passport.authenticate('local')(req, res, function() {
-          res.redirect('/feed');
+          res.redirect('/Quation');
         });
       })
       .catch(function(error) {
@@ -109,7 +121,7 @@ router.post('/register', function(req, res, next) {
 
 
 router.post('/login',passport.authenticate("local",{
-  successRedirect: "/feed",
+  successRedirect: "/Quation",
   failureRedirect: "/index"
 }),function(req,res){})
 
